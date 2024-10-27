@@ -35,7 +35,9 @@ Please download the following datasets to run the experiments.
 
 ## Running Experiments
 
-All hyperparameters used for the experiments in the paper are located in the [`config`](./configs) folder, with specific definitions in [`mfm/train/parsers.py`](./mfm/train/parsers.py). To specify the data location, use the `--working_dir` flag. For example:
+All hyperparameters used for the experiments in the paper are located in the [`config`](./configs) folder, with specific definitions in [`mfm/train/parsers.py`](./mfm/train/parsers.py). To specify the data location, use the `--working_dir` flag. 
+
+To specify the experiment to run use `--config_path` flag, for example:
 
 ```bash
 python -m mfm.train.main --config_path ./config/arch/ot-mfm.yaml
